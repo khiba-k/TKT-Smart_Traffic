@@ -1,0 +1,211 @@
+body {
+  
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  background-color: #288066;
+  height: 40px;
+}
+
+main {
+  background-color: #16423f;
+  background: linear-gradient(to bottom right, white, rgba(150, 150, 150, 1), white);
+}
+
+.mg {
+ padding-top: 50%;
+ padding-bottom: 50%;
+}
+
+.full-height {
+  height: 100vh; /* Full viewport height */
+}
+
+.upper-row {
+  height: 15%; /* 20% of the parent height */
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.lower-row {
+  height: 75%; /* 80% of the parent height */
+}
+
+.img-container {
+  height: 750px;
+  width: 750px;
+}
+
+.custom-form-control {
+  padding: 0.25rem 0.5rem;  /* Adjust the padding as needed */
+  font-size: 0.875rem;  /* Adjust the font size as needed */
+  height: auto;  /* Ensure the height is auto-adjusted based on the padding and font size */
+  
+}
+
+.custom-list-group {
+  background-color: #E8E9EB;
+}
+
+.custom-list-group2 {
+  background-color: #d9d9d9;
+}
+
+.display-card {
+  background-color: #d9d9d9;
+  border-radius: 2%;
+  width: 200px;
+  border: none;
+}
+
+.suggest-tab {
+  /* background-color: rgba(196, 225, 197, 0.5); */
+  background-color: #d9d9d9;
+  
+}
+
+.current-tab {
+  border-left: 5px solid #d9d9d9;
+  background-color: #d9d9d9;
+  background-color: rgba(217, 217, 217, 0.5);
+
+}
+
+.black-and-white-theme {
+  filter:grayscale(100%);
+}
+
+/* @media (max-width: 991.98px) {
+  .lower-row .col-lg-2 {
+    display: none;
+  }
+} */
+
+.vid-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.input-group{
+  width: 191px;
+}
+
+.margin-input2{
+  margin-left:  20px;
+}
+
+.input-group-parent{
+  width: 80%;
+}
+
+.form-control{
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.responsive-map{
+  height: 60%;
+}
+
+/* Adding Responsiveness */
+
+@media only screen and (max-width: 600px) {
+  
+  body{
+    
+    height: 100%;
+    /* overflow: hidden; */
+  }
+
+  .parent-card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Upper Row */
+  .upper-row{
+    /* height: auto; 20% of the parent height */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 0px;
+  }
+
+  .input-group-parent{
+    width: 100%;
+    position: relative;
+  }
+
+
+  .input-group > div:nth-last-child(2),
+  .input-group > div:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-group{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .btn-primary{
+    width: 100%;
+  }
+
+  .input-group .form-control{
+    width: 100%;
+  }
+
+
+  /* #location_id{
+    width: 100%;
+    margin:2.5px 0 2.5px 0;
+  }
+  
+  #destination_id{
+    width: 100%;
+    margin:2.5px 0 2.5px 0;
+  } */
+
+  .logo{
+    display: none;
+  }
+
+  #parent_col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Tab Column */
+  .tab-col{
+    visibility: show;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0,0.7);
+    height: auto;
+    width: 100%;
+  }
+
+  /* Map Column */
+
+  .map-col{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+  }
+
+  .responsive-map{
+    height: 300px;
+  }
+}
