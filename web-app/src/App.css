@@ -9,7 +9,7 @@ header {
   height: 40px;
 }
 
-main {
+#main {
   background-color: #16423f;
   background: linear-gradient(to bottom right, white, rgba(150, 150, 150, 1), white);
 }

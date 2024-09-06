@@ -4,7 +4,7 @@ import { ClerkProvider, SignInButton, SignedOut, UserButton, SignedIn } from '@c
 
 const Header = () => {
   return (
-      <header>
+      <header style={{display: "flex", justifyContent: "end"}}>
         <SignedOut>
           <SignInButton style={{ backgroundColor: "#288066", border: "none", color: "#FFFFFF" }} />
         </SignedOut>

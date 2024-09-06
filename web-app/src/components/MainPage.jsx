@@ -125,7 +125,7 @@ const MainPage = () => {
   };
 
   return (
-    <div className={`bg ${isBlackAndWhiteTheme ? "black-and-white-theme" : ""}`}>
+    <div id="main" className={`bg ${isBlackAndWhiteTheme ? "black-and-white-theme" : ""}`}>
       <Header />
       <SearchBar
         currentLocation={currentLocation}
