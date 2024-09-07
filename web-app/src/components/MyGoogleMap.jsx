@@ -78,9 +78,8 @@ const MyGoogleMap = ({ currentLocation, destination, setLocationName, setDistanc
       console.error("Error saving search:", error.response ? error.response.data : error.message);
     }
   };
-
+  const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   return (
-    const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
     <div>
       <LoadScript {googleMapsApiKey}>
         <GoogleMap
