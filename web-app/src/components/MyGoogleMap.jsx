@@ -80,7 +80,7 @@ const MyGoogleMap = ({ currentLocation, destination, setLocationName, setDistanc
   };
 
   return (
-    const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY;
+    const googleMapsApiKey = process.env.VITE.GOOGLE_MAPS_API_KEY;
     <div>
       <LoadScript {googleMapsApiKey}>
         <GoogleMap
