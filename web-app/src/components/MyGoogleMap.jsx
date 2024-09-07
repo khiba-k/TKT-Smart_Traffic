@@ -81,7 +81,7 @@ const MyGoogleMap = ({ currentLocation, destination, setLocationName, setDistanc
   const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   return (
     <div>
-      <LoadScript {googleMapsApiKey}>
+      <LoadScript googleMapsApiKey={googleMapsApiKey}>
         <GoogleMap
           mapContainerStyle={mapStyles}
           zoom={12}
