@@ -8,7 +8,7 @@ const SmartTraffic = () => {
   const backgroundVideoUrl = 'https://videos.pexels.com/video-files/3063475/3063475-uhd_2560_1440_30fps.mp4';
   return (
     <>
-      <div className="landing-page vid-overlay" style={{ height: "100%", width: "100%" }}>
+      <div className="landing-page vid-overlay" style={{ height: "100%", width: "100%", border: "4px solid blue" }}>
         <div className="bg-video vid-overlay">
           <video autoPlay muted loop style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -1 }}>
             <source src={backgroundVideoUrl} type="video/mp4" />
