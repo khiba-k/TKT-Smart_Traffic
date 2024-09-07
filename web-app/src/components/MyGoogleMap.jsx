@@ -80,8 +80,9 @@ const MyGoogleMap = ({ currentLocation, destination, setLocationName, setDistanc
   };
 
   return (
+    const googleMapsApiKey = process.env.GOOGLE_MAPS_API_KEY;
     <div>
-      <LoadScript googleMapsApiKey="AIzaSyCfZK9eq1sBWYplK3kxdkE7BJ6JkXGsNWs">
+      <LoadScript {googleMapsApiKey}>
         <GoogleMap
           mapContainerStyle={mapStyles}
           zoom={12}
