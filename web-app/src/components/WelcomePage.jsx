@@ -56,7 +56,7 @@ const SmartTraffic = () => {
           <div style={{ display: "flex", justifyContent: "center" }}>
           <button style={{backgroundColor: "#288066", color: "white", border: "none", borderRadius: "4px", fontSize: "18px", padding: "12px 24px"}}>
             
-              <a href="http://localhost:5173/Main" className="nav-link" style={{ textDecoration: "none" }}>Get Started</a>
+              <a href="https://tkt-traffic.vercel.app/Main" className="nav-link" style={{ textDecoration: "none" }}>Get Started</a>
             
           </button>
           </div>
