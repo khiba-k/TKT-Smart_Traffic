@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: smart-traffic-backend
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: DATABASE_URL
+        value: ${DATABASE_URL} # This will be replaced by your MongoDB Atlas URL
+    plan: free  # or 'starter' if you need more resources
+    autoDeploy: true  # Automatically redeploy after changes to your repo
+    # Optional: You can add health checks if you want
+    healthCheckPath: "/health"  # Path for health check
