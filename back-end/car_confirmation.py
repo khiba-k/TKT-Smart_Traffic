@@ -66,7 +66,7 @@ def check_for_vehicles():
             else:
                 vehicle_detected = False
 
-            url = "http://127.0.0.1:5000/camera/camera1"  # Replace with your actual URL
+            url = "https://tkt-smart-traffic.onrender.com/camera/camera1"  # Replace with your actual URL
             
             if vehicle_detected:
                 data = {"vehicle_detected": vehicle_detected}

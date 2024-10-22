@@ -14,4 +14,5 @@ app.register_blueprint(sensor_bp, url_prefix='/sensors')
 app.register_blueprint(camera_bp, url_prefix='/camera')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
