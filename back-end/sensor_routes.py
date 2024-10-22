@@ -1,11 +1,16 @@
-# sensor_routes.py
+import os
 from flask import Blueprint, request, jsonify
 from pymongo import MongoClient
 from datetime import datetime
+from dotenv import load_dotenv
 
-# Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['smart-traffic']
+load_dotenv()
+
+# Get the database URL from environment variables
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+client = MongoClient(DATABASE_URL)
+db = client['quicksmartsolutions']
 sensors_collection = db['sensors']
 
 # Create a Blueprint for sensor routes

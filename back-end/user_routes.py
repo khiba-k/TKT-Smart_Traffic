@@ -1,10 +1,15 @@
-# user_routes.py
+import os
 from flask import Blueprint, request, jsonify
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
-# Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['smart-traffic']
+load_dotenv()
+
+# Get the database URL from environment variables
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+client = MongoClient(DATABASE_URL)
+db = client['quicksmartsolutions']  # Access the correct database
 user_profiles = db['user_profiles']
 
 # Create a Blueprint for user routes
