@@ -20,7 +20,7 @@ float oldDistance = 0.0; // Variable to store the previous distance
 float distance = 0.0; // Current distance
 
 // Server details
-const char server[] = "http://192.168.1.28:5000/sensors/add_ultrasonic1";
+const char server[] = "https://intelligent-traffic-system-v2-o6tp.vercel.app/api/sensor1";
 
 // Hardware Serial on TTGO T-Call
 #define MODEM_RST             5
